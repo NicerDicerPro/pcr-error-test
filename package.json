@@ -24,8 +24,5 @@
     "typescript": "5.0.2",
     "puppeteer-element2selector": "^0.0.3",
     "puppeteer-chromium-resolver": "^19.3.0"
-  },
-  "devDependencies": {
-    
   }
 }
