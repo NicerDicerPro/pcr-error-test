@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "worker-build": "docker build -t pcr-error-test-worker -t pcr-error-test-worker:0.0.1 ."
+  },
+  "engines": {
+    "node": "^18.12.1"
   },
   "dependencies": {
     "@types/node": "18.15.10",
@@ -17,6 +21,11 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "typescript": "5.0.2"
+    "typescript": "5.0.2",
+    "puppeteer": "^19.7.4",
+    "puppeteer-element2selector": "^0.0.3"
+  },
+  "devDependencies": {
+    "puppeteer-chromium-resolver": "^19.3.0"
   }
 }
