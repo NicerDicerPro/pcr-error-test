@@ -22,10 +22,10 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "typescript": "5.0.2",
-    "puppeteer": "^19.7.4",
-    "puppeteer-element2selector": "^0.0.3"
+    "puppeteer-element2selector": "^0.0.3",
+    "puppeteer-chromium-resolver": "^19.3.0"
   },
   "devDependencies": {
-    "puppeteer-chromium-resolver": "^19.3.0"
+    
   }
 }
