@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "worker-build": "docker build -t pcr-error-test-worker -t pcr-error-test-worker:0.0.1 ."
+    "worker-build": "docker build --progress=plain -t pcr-error-test-worker ."
   },
   "engines": {
     "node": "^18.12.1"
@@ -23,7 +23,7 @@
     "react-dom": "18.2.0",
     "typescript": "5.0.2",
     "puppeteer-element2selector": "^0.0.3",
-    "puppeteer-chromium-resolver": "^19.3.0"
+    "puppeteer-chromium-resolver": "^19.3.1"
   },
   "devDependencies": {
     
