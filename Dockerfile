@@ -7,7 +7,7 @@ COPY package.json yarn.lock ./
 
 RUN apk --no-cache add chromium
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 
 RUN yarn install --frozen-lockfile --network-timeout 100000
@@ -26,7 +26,7 @@ WORKDIR /app
 
 ENV NODE_ENV production
 ENV IS_WORKER true
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+ENV PUPPETEER_SKIP_DOWNLOAD=true
 ENV PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser
 ENV NODE_OPTIONS='--max_old_space_size=2048'
 
@@ -39,8 +39,8 @@ COPY --from=builder /app/package.json ./package.json
 
 # Automatically leverage output traces to reduce image size
 # https://nextjs.org/docs/advanced-features/output-file-tracing
-COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
-COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+#COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+#COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
 
 RUN apk --no-cache add curl
 RUN apk --no-cache add chromium

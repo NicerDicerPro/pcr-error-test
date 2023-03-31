@@ -1873,10 +1873,10 @@ punycode@^2.1.0:
   resolved "https://registry.yarnpkg.com/punycode/-/punycode-2.3.0.tgz#f67fa67c94da8f4d0cfff981aee4118064199b8f"
   integrity sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==
 
-puppeteer-chromium-resolver@^19.3.1:
-  version "19.3.1"
-  resolved "https://registry.yarnpkg.com/puppeteer-chromium-resolver/-/puppeteer-chromium-resolver-19.3.1.tgz#bd4a40077222714298f3c8094a062a068cd6f4db"
-  integrity sha512-tuNPR/6ohSGMoX9UxxAJofdSa9Jmo/Tgt/FsG2vMHHYAi7ZuUHlMPOrKPQvU/r87hLES0gAEjZqRaRMyL4X8Gg==
+puppeteer-chromium-resolver@^19.3.2:
+  version "19.3.2"
+  resolved "https://registry.yarnpkg.com/puppeteer-chromium-resolver/-/puppeteer-chromium-resolver-19.3.2.tgz#d3f46d6e3c6d9d4600cfab06f7e8ed5ecd5280cc"
+  integrity sha512-9ep9PRobQnLwa05O2lRKTCbS+0pOGsyE05rLPrf8OVHMZn7EZaTxt+R3Vtzu+QZh5GnoZn0ac87wD/uIhdMPWw==
   dependencies:
     eight-colors "^1.0.3"
     gauge "^5.0.0"
